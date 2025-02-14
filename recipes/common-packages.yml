@@ -3,6 +3,7 @@ modules:
     install:
       - vim
       - foot
+      - zsh
 
       - wireplumber
       - pipewire
