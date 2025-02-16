@@ -5,6 +5,8 @@ modules:
       - foot
       - zsh
 
+      - waybar
+
       - wireplumber
       - pipewire
       - pamixer
