@@ -19,19 +19,34 @@ modules:
   # - from-file: sway.yml
   - from-file: niri.yml
 
-  # - type: akmods
-  #   install:
-  #     - wl
-  - type: containerfile
-    snippets:
-      - |-
-        RUN \
-        --mount=type=bind,from=stage-files,src=/files,dst=/tmp/files,rw \
-        --mount=type=bind,from=ghcr.io/blue-build/modules/rpm-ostree:latest,src=/modules,dst=/tmp/modules,rw \
-        --mount=type=bind,from=ghcr.io/blue-build/cli/build-scripts:v0.9.8,src=/scripts/,dst=/tmp/scripts/ \
-        --mount=type=cache,dst=/var/cache/rpm-ostree,id=rpm-ostree-cache-my-os-image-old-macbook-41,sharing=locked \
-        --mount=type=cache,dst=/var/cache/libdnf5,id=dnf-cache-my-os-image-old-macbook-41,sharing=locked \
-        rpm -i https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
-        && /tmp/scripts/run_module.sh 'rpm-ostree' '{"type":"rpm-ostree","install":["kmod-wl","broadcom-wl"]}'
+  - type: akmods
+    install:
+      - wl
+
+  # - type: containerfile
+  #   snippets:
+  #     - |-
+  #       RUN \
+  #       rpm-ostree override replace \
+  #       https://kojipkgs.fedoraproject.org//packages/kernel/6.12.13/200.fc41/x86_64/kernel-6.12.13-200.fc41.x86_64.rpm \
+  #       https://kojipkgs.fedoraproject.org//packages/kernel/6.12.13/200.fc41/x86_64/kernel-core-6.12.13-200.fc41.x86_64.rpm \
+  #       https://kojipkgs.fedoraproject.org//packages/kernel/6.12.13/200.fc41/x86_64/kernel-modules-6.12.13-200.fc41.x86_64.rpm \
+  #       https://kojipkgs.fedoraproject.org//packages/kernel/6.12.13/200.fc41/x86_64/kernel-modules-core-6.12.13-200.fc41.x86_64.rpm \
+  #       https://kojipkgs.fedoraproject.org//packages/kernel/6.12.13/200.fc41/x86_64/kernel-modules-extra-6.12.13-200.fc41.x86_64.rpm \
+  #       && ostree container commit
+  # - type: containerfile
+  #   snippets:
+  #     - |-
+  #       RUN \
+  #       INITRAMFSPATH=$(echo /usr/lib/modules/*) \
+  #       && KERNELVER=$(basename $INITRAMFSPATH) \
+  #       && INITRAMFSIMG=$INITRAMFSPATH/initramfs.img \
+  #       && chmod 777 "$INITRAMFSPATH" \
+  #       && chmod 777 "$INITRAMFSIMG" \
+  #       && dracut --no-hostonly --kver "$KERNELVER" --reproducible -v --add ostree -f "$INITRAMFSIMG" \
+  #       && chmod 0600 "$INITRAMFSIMG" \
+  #       && chmod 755 "$INITRAMFSPATH" \
+  #       && ostree container commit
+  # - type: initramfs
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
