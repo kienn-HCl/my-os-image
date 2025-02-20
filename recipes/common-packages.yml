@@ -8,6 +8,7 @@ modules:
       - python3-neovim
 
       - waybar
+      - xorg-x11-server-Xwayland
 
       - wireplumber
       - pipewire
