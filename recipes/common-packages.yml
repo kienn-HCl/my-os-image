@@ -4,6 +4,8 @@ modules:
       - vim
       - foot
       - zsh
+      - neovim
+      - python3-neovim
 
       - waybar
 
@@ -26,9 +28,12 @@ modules:
       - fcitx5-configtool
       - fcitx5-gtk
       - fcitx5-qt
-    remove:
-      - firefox
-      - firefox-langpacks
+
+      - tlp
+      - efivar
+    # remove:
+    #   - firefox
+    #   - firefox-langpacks
   
   - type: files
     files:
