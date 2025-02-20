@@ -24,6 +24,7 @@ modules:
       - firewall-config
 
       - fcitx5
+      - fcitx5-autostart
       - fcitx5-mozc
       - fcitx5-configtool
       - fcitx5-gtk
