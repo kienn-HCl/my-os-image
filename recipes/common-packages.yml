@@ -7,9 +7,6 @@ modules:
       - neovim
       - python3-neovim
 
-      - waybar
-      - xorg-x11-server-Xwayland
-
       - wireplumber
       - pipewire
       - pamixer
@@ -31,6 +28,8 @@ modules:
       - fcitx5-gtk
       - fcitx5-qt
 
+      - waybar
+      - lxqt-policykit
       - tlp
       - efivar
     # remove:
