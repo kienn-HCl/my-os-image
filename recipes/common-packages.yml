@@ -32,6 +32,7 @@ modules:
       - lxqt-policykit
       - tlp
       - efivar
+      - power-profiles-daemon
     # remove:
     #   - firefox
     #   - firefox-langpacks
