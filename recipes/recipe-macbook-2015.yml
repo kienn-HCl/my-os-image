@@ -18,6 +18,9 @@ modules:
   - from-file: hyprland.yml
   # - from-file: sway.yml
   - from-file: niri.yml
+  - type: rpm-ostree
+    install:
+      - power-profiles-daemon
 
   - type: akmods
     install:
