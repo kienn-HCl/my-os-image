@@ -41,3 +41,13 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/kienn-hcl/my-os-image
 ```
+
+## Trouble
+- ブート時、ディスク複合のパスワード入力画面でus配列となってしまう。
+カーネルパラメータに`vconsole.keymap=jp`を追加する。その後リブート。
+次のコマンドでカーネルパラメータを編集できる。
+```
+rpm-ostree kargs --editor
+```
+
+参考: [LUKS unlock screen always uses en-US keyboard layout · Issue #3 · fedora-silverblue/issue-tracker](https://github.com/fedora-silverblue/issue-tracker/issues/3)
