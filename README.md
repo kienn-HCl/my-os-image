@@ -43,10 +43,10 @@ cosign verify --key cosign.pub ghcr.io/kienn-hcl/my-os-image
 ```
 
 ## Trouble
-- ブート時、ディスク複合のパスワード入力画面でus配列となってしまう。
+### ブート時、ディスク複合のパスワード入力画面でus配列となってしまう。
 カーネルパラメータに`vconsole.keymap=jp`を追加する。その後リブート。
 次のコマンドでカーネルパラメータを編集できる。
-```
+```bash
 rpm-ostree kargs --editor
 ```
 
