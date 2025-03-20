@@ -16,6 +16,7 @@ modules:
   - from-file: common-packages.yml
   - from-file: hyprland.yml
   - from-file: niri.yml
+  - from-file: miracle-wm.yml
   - type: rpm-ostree
     install:
       - power-profiles-daemon
