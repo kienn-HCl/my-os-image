@@ -8,3 +8,7 @@ modules:
     #   - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
     # install:
     #   - niri
+  - type: files
+    files:
+      - source: system/niri
+        destination: /
