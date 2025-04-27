@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-swww_randomize_multi.sh /usr/share/backgrounds/wallpapers 3600
+/usr/libexec/swww_randomize_multi.sh /usr/share/backgrounds/wallpapers 3600
