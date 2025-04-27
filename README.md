@@ -60,3 +60,7 @@ sudo usermod -s /usr/bin/zsh $USER
 その後、リブート等すると変更が適用される。
 
 参考: [5.4 ユーザー管理の他の例](https://wiki.archlinux.jp/index.php/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%A8%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97#.E3.83.A6.E3.83.BC.E3.82.B6.E3.83.BC.E7.AE.A1.E7.90.86.E3.81.AE.E4.BB.96.E3.81.AE.E4.BE.8B)
+
+
+### filesが反映されない
+'/usr/local'などOS実行時に'/var'にマウントされるようなものは追加できないようだ。
