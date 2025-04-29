@@ -7,8 +7,9 @@ description: This is my personal OS image. For old macbook.
 
 # the base image to build on top of (FROM) and the version tag to use
 # base-image: ghcr.io/ublue-os/base-main
-base-image: ghcr.io/ublue-os/sericea-main
-image-version: 41 # latest is also supported if you want new updates ASAP
+# base-image: ghcr.io/ublue-os/sericea-main
+base-image: ghcr.io/ublue-os/sway-atomic-main
+image-version: 42 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
