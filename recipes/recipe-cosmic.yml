@@ -23,7 +23,7 @@ modules:
 
   - type: script
     snippets:
-      - "ln -sf /var/home/nix /"
+      - "ln -sf /var/nix /"
   - type: justfiles
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 

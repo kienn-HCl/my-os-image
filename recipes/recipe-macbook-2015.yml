@@ -24,7 +24,7 @@ modules:
 
   - type: script
     snippets:
-      - "ln -sf /var/home/nix /"
+      - "ln -sf /var/nix /"
   - type: justfiles
   - type: akmods
     install:
