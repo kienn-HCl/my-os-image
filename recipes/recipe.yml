@@ -22,7 +22,7 @@ modules:
       - power-profiles-daemon
   - type: script
     snippets:
-      - "ln -sf /var/nix /"
+      - "ln -sf /var/home/nix /"
   - type: justfiles
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
