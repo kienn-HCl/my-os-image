@@ -30,7 +30,7 @@ jobs:
           # !! Add your recipes here
           - recipe.yml
           - recipe-kde.yml
-          - recipe-macbook-2015.yml
+          # - recipe-macbook-2015.yml
           - recipe-cosmic.yml
     steps:
       # the build is fully handled by the reusable github action
