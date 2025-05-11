@@ -42,7 +42,7 @@ modules:
         destination: /etc
       - source: system/usr
         destination: /usr
-  # - type: initramfs
+  - type: initramfs
   - type: rpm-ostree
     repos:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
