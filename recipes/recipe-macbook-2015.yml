@@ -22,6 +22,9 @@ modules:
     install:
       - power-profiles-daemon
 
+  - type: script
+    snippets:
+      - "ln -sf /var/nix /"
   - type: justfiles
   - type: akmods
     install:
