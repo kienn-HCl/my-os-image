@@ -32,6 +32,7 @@ jobs:
           - recipe-kde.yml
           # - recipe-macbook-2015.yml
           - recipe-cosmic.yml
+          - recipe-bazzite.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
