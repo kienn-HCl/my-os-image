@@ -6,11 +6,16 @@ modules:
       - zsh
       - neovim
       - python3-neovim
+      - imv
+
+      - thunar
 
       - wireplumber
       - pipewire
       - pamixer
       - pulseaudio-utils
+      - pavucontrol
+      - helvum
 
       - bluez
       - bluez-tools
