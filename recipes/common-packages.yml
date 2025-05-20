@@ -9,6 +9,11 @@ modules:
       - imv
 
       - thunar
+      - thunar-volman
+      - thunar-vcs-plugin
+      - thunar-archive-plugin
+      - thunar-media-tags-plugin
+      - gvfs
 
       - wireplumber
       - pipewire
