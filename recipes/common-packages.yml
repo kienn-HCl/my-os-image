@@ -14,6 +14,11 @@ modules:
       - thunar-archive-plugin
       - thunar-media-tags-plugin
       - gvfs
+      - gvfs-client
+      - gvfs-fuse
+      - gvfs-mtp
+      - gvfs-nfs
+      - gvfs-mtp
 
       - wireplumber
       - pipewire
