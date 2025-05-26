@@ -4,6 +4,7 @@ TryExec=/usr/libexec/lxqt-policykit-agent
 Exec=/usr/libexec/lxqt-policykit-agent
 #OnlyShowIn=LXQt;
 X-LXQt-Module=true
+Hidden=true
 
 Name=PolicyKit Handler
 Name[ar]=معالج وحدة السِّياسة بوليسي كيت
