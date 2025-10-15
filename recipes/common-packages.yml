@@ -20,6 +20,7 @@ modules:
       - gvfs-mtp
       - gvfs-nfs
       - gvfs-mtp
+      - xdg-desktop-portal-wlr
 
       - wireplumber
       - pipewire
