@@ -8,6 +8,7 @@ modules:
       - python3-neovim
       - imv
       - perf
+      - clang
 
       - thunar
       - thunar-volman
