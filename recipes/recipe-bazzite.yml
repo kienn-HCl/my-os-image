@@ -16,10 +16,9 @@ modules:
   - from-file: common-packages.yml
   - from-file: hyprland.yml
   - from-file: niri.yml
-  # - from-file: miracle-wm.yml
-  # - type: rpm-ostree
-  #   install:
-  #     - power-profiles-daemon
+  - type: rpm-ostree
+    install:
+      - toolbox
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
