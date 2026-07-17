@@ -9,6 +9,8 @@ modules:
       - imv
       - perf
       - clang
+      - screen
+      - arp-scan
       - nix
 
       - thunar
@@ -50,7 +52,6 @@ modules:
       - waybar
       # - lxqt-policykit
       - xfce-polkit
-      - tlp
       - efivar
     # remove:
     #   - firefox
