@@ -9,6 +9,7 @@ modules:
       - imv
       - perf
       - clang
+      - nix
 
       - thunar
       - thunar-volman
