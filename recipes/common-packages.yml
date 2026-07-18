@@ -52,6 +52,7 @@ modules:
       # - lxqt-policykit
       - xfce-polkit
       - efivar
+      - sddm
     # remove:
     #   - firefox
     #   - firefox-langpacks
