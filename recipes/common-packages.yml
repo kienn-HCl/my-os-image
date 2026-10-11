@@ -25,7 +25,6 @@ modules:
       - gvfs-mtp
       - xdg-desktop-portal-wlr
 
-      - wireplumber
       - pipewire
       - pamixer
       - pulseaudio-utils
